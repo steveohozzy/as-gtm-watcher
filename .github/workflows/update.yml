@@ -6,14 +6,14 @@ name: Grab a GTM container, check it in to repo and fire webhook if it's changed
 on:
   workflow_dispatch:
   schedule:
-#    - cron:  '0 */1 * * *'
+    - cron:  '0 */1 * * *'
     
 env:
   # Space separated list of GTM container IDs to check
-  GTM_IDS: GTM-XXX GTM-YYY
+  GTM_IDS: GTM-WBP4JD
   
   # ID of SpeedCurve site see https://support.speedcurve.com/reference/get-all-sites-1
-  SPEEDCURVE_SITE_ID: xxxxxx
+  SPEEDCURVE_SITE_ID: 804602
 
   # Basic auth details store in a repo secret
   # See https://support.speedcurve.com/reference/getting-started#basic-authentication
